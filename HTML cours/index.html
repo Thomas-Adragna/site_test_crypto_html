@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Le titre de la page -->
+    <title>Cours HTML</title>
+    <!-- Icone de l'onglet -->
+    <link rel="shortcut icon" href="logo-html.png" />
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <h1><strong>Les Cryptomonnaies</strong></h1>
+        <p>
+            Je vais vous présenter les cryptomonnaies les plus connues !
+        </p>
+      </div>
+    </header>
+    <section>
+      <div>
+        <h2><span>&#8493;&#8504;&#8509;&#8473;&#8510;&#8500;</span>   Photos </h2>
+        <span>
+            <figure>
+                <img src="bitcoin.png" height="200" alt="logo bitcoin" />
+                <figcaption><strong>Logo de Bitcoin</strong></figcaption>
+                <a href="/bitcoin.png" target="_blank">Cliquez pour ouvrir le logo dans un nouvel onglet</a>
+                <br>
+                <a href="bitcoin.png" download="logo_bitcoin">Cliquez pour télécharger le logo</a>
+                <br>
+                <br>
+                <a href="https://bitcoin.org/fr/" target="_blank">site officiel de Bitcoin</a>
+                <br>
+                <a href="#Tableaux">Aller à la section tableau</a>
+                <br>
+                <br>
+                <img src="ethereum.png" height="200" alt="logo ethereum" />
+                <figcaption><strong>Logo de l'ethereum</strong></figcaption>
+                <a href="/ethereum.png" target="_blank">Cliquez pour ouvrir le logo dans un nouvel onglet</a>
+                <br>
+                <a href="ethereum.png" download="logo_ethereum">Cliquez pour télécharger le logo</a>
+                <br>
+                <br>
+                <a href="https://ethereum.org/fr/" target="_blank">site officiel de l'Ethereum</a>
+                <br>
+                <a href="#Tableaux">Aller à la section tableau</a>
+            </figure>
+        </span>      
+      </div>
+      <div>
+        <h3>Listes - Top cryptomonnaies et leurs autres versions</h3>
+        <ol type="1">
+          <li>Bitcoin = BTC</li>
+            <ul>Bitcoin Cash</ul>
+          <li>Ethereum = ETH</li>
+            <ul>Ethereum Classic</ul>
+            <ul>Ethereum PoW</ul>
+          <li>DogeCoin = DOGE</li>
+          <li>Shiba = SHIB</li>
+          <li>Tether USD = USDT</li>
+          <li>Ripple = XRP</li>
+          <li>Circle USD = USDC</li>
+        </ol>
+      </div>
+      <div>
+        <h4>Tableaux</h4>
+        <table border="1" width="30%">
+          <!-- Légende -->
+          <caption>
+            Cryptomonnaies en fonction de leur blockchain et de leur market cap
+          </caption>
+          <!-- En-tête -->
+             <thead>
+            <td colspan="4">Tableau des cryptomonnaies</td>
+            <tr>
+              <th>Cryptomonnaie</th>
+              <th>Symbole</th>
+              <th>Blockchain</th>
+              <th>MarketCap</th>
+            </tr>
+          </thead>
+          <!-- Corps du tableau -->
+          <tbody>
+            <tr>
+              <td>Bitcoin</td>
+              <td>BTC</td>
+              <td>Bitcoin</td>
+              <td><strong>€516,875,959,931</strong></td>
+            </tr>
+            <tr>
+              <td>Ethereum</td>
+              <td>ETH</td>
+              <td>Ethereum</td>
+              <td><strong>€204,153,572,739</strong></td>
+            </tr>
+            <tr>
+              <td>DogeCoin</td>
+              <td>DOGE</td>
+              <td>Ethereum</td>
+              <td><strong>€204,153,572,739</strong></td>
+            </tr>
+            <tr>
+            </tr>
+           </tbody>
+        </table>
+      </div>
+      <div>
+        <h5>Vidéo</h5>
+        <p>Petite vidéo expliquant comment fonctionnent les échanges de crypto (c'est presque comme ca)</p>
+        <video src="vidéo_crypto.mp4" width="30%" height="auto" loop muted autoplay></video>
+      </div>
+    </section>
+    <br>
+    <!-- Formulaire  -->
+    <section>
+        <h2>Formulaire</h2>
+        <form action="/action.php" method="post">
+            <fieldset width="30%">
+                <legend>Informations personnelles</legend>
+                <label for="name">Nom</label><input id="name"type="text" placeholder="entrez votre nom" required><br>
+                <label for="mail">Email</label><input id="mail"type="text" placeholder="entrez votre mail" required><br>
+                <label for="password">Mot de Passe</label><input id="password"type="text" placeholder="entrez votre mot de passe" required><br>
+                <!-- input number -->
+                <label for="age">Age</label><input id="age" type="number" min="0" max="99" step="2" value="18" required><br>
+                <!-- input select -->
+                <label for="gender">Genre</label>
+                <select id="gender">
+                    <option value="Homme">Homme</option>
+                    <option selected value="Femme">Femme</option>
+                    <option value="autre">autre</option>
+                </select><br>
+                <!-- input radio -->
+                <div>
+                    <input type="radio" name="type" checked id="human">
+                    <label for="human">Humain</label>
+                    <!-- checked permet de sélectionner par défaut -->
+                    <input type="radio" name="type" id="dog">
+                    <label for="dog">Chien</label>
+
+                    <input type="radio" name="type" id="Cat">
+                    <label for="Cat">Chat</label>
+                </div>
+
+                <textarea cols="30" rows="10" placeholder="Entrez votre demande"></textarea><br>
+
+                <!-- Input checkbox -->
+                <label></label><input type="checkbox" required/>Acceptez les conditions générales d'utilisation <br>
+                <label></label><input type="checkbox" required/>Acceptez de recevoir notre newsletter <br><br>
+                <input type="submit" value="Valider">
+            </fieldset>
+        </form>
+    </section>
+    <br>
+
+    <!-- Mail et envoie de fichier -->
+    <footer>
+        <a href="mailto:crypto@bitcoin.com">Cliquez pour m'envoyer un mail</a>
+        <br>
+        <p><strong>Une mise à jour aura bientôt lieu, restez à l'affut !</strong></p>
+    </footer>
+  </body>
+</html>
